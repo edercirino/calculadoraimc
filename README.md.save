@@ -1,0 +1,59 @@
+# Calculadora IMC - Breve descrição
+
+## O que é o Projeto?
+
+Um aplicativo Android/iOS que calcula o índice de massa corpórea(IMC)
+
+## Principais Funcionalidades
+
+### Calcular o IMC
+
+Nessa tela o usuário entra com altura, peso e após clicar em calcular  
+o resultado é mostrado na tela.
+
+(Foto)
+
+### Relatório dos Principais clientes
+
+## Como executá-lo
+
+Se você for programador, faça os seguintes passos: 
+
+Partindo do ponto que você já tem instalado em sua máquina  
+o nodejs, yarn, e o Android Studio, Faça a seguinte:
+
+ -Clone o repositório
+ -Rode os comandos:
+```
+yarn install
+npx react-native start
+npx react-native run-android
+```
+
+## Diário de Bordo
+
+### Dia 1 - 10/12/YYYFoi feito nesse dia:
+
+* isso
+* isso
+* Aquilo
+
+O desafio desse dia foi:
+
+* ...
+* ...
+* ...
+
+### Dia 2 - DD/MM/YYYY
+
+Foi feito nesse dia:
+
+* isso
+* isso
+* Aquilo
+
+O desafio desse dia foi:
+
+* ...
+* ...
+* ...

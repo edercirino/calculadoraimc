@@ -1,113 +1,55 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {View, Text, TextInput, Button, StyleSheet} from 'react-native';
+// import {} from 'react-native-paper';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
+const App = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
+    <View style={styles.app}>
+      <Text style={styles.legend}>Seu IMC</Text>
+
+      <View>
+        <Text style={styles.result}>25</Text>
+        <Text style={styles.diganose}>Normal</Text>
+      </View>
+
+      <View>
+        <TextInput style={styles.weight} placeholder="Peso" />
+        <TextInput style={styles.height} placeholder="Altura" />
+        <Button title="Calcular" style={styles.buttonCalc} />
+      </View>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  app: {
+    padding: 10,
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+  legend: {
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
-  body: {
-    backgroundColor: Colors.white,
+  result: {
+    textAlign: 'center',
+    fontSize: 22,
+    fontWeight: 'bold',
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  diganose: {
+    textAlign: 'center',
+    fontSize: 16,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
+  weight: {
+    borderColor: '#000',
+    borderWidth: 1,
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
+  height: {
+    borderColor: '#000',
+    borderWidth: 1,
+    marginTop: 10,
+    marginBottom: 10,
   },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
+  buttonCalc: {
+    marginTop: 20,
   },
 });
 

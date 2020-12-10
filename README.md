@@ -40,6 +40,8 @@ Foi feito nesse dia:
 * Criação do projeto
 * Criando página principal
 * Printando "hello world" na tela
+* Implementando campo de resultado e diagnóstico
+* Implementando campo de entrada de peso e altura
 
 O desafio desse dia foi:
 
