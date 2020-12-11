@@ -46,3 +46,18 @@ Foi feito nesse dia:
 O desafio desse dia foi:
 
 * Estar mais focado em desenvolver sem dispersar a atenção
+
+### Dia 2 - 11/12/2020
+
+Foi feito nesse dia:
+
+* Implementação de estilos
+* Fazer o app funcionar de fato implementando funções aos campos de entrada  
+e botão de ação
+* Exibir o resultado na tela.
+* Conclusão do App.
+
+O desafio desse dia foi:
+
+* Aprimorar o uso de states.
+* Manter o foco.
